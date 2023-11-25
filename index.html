@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/8d6b79b36f.js" crossorigin="anonymous"></script>
+    <!-- Icono Window -->
+    <link rel="shortcut icon" href="./public/img/Logos/patinarte.ico" type="image/x-icon">
+    <title>PatinArte</title>
+    
+  </head>
+  <body>
+    <!-- Inicio Header -->
+    <header class="">
+      <nav class="navbar container-fluid">
+        <div class="logo">
+          <img src="./public/img/hero/logo.png" alt="Logotipo de PatinArte" />
+        </div>
+        <!-- Menu Hamburguesa -->
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="navbar__menu-icon"><i class="fa-solid fa-bars"></i></label>
+        <!-- Links -->
+        <ul class="navbar__items">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__link" >Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link">Sobre Nosotros</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#product" class="navbar__link">Productos</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Hero -->
+    <section class="hero container-fluid">
+      <div class="hero__contenedor">
+        <div class="hero__hero">
+          <div class="hero__logo">
+            <h1 class="hero__title"><span>P</span>atin<span>A</span>rte</h1>
+          </div>
+          <p class="hero__contenido">
+            Tienda de venta de patines artísticos, rollers, y
+            accesorios para todos los modelos de patín.<br/> Te asesoramos en lo que necesites.
+          </p>
+          <p id="title-link_hero"> Vení a conocernos!</p>
+          <a href="#contact" class="hero__link">Unirse</a>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Hero -->
+
+    <!--   Inicio About Us -->
+    <section class="about container">
+      <h3 class="about__title" id="about">Nuestra historia</h3>
+      <div class="about__content">
+        <figure>
+          <img src="./public/img/hero/equipo1.jpg" class="about__img" alt="imagen de la tienda fisica de PatinArte">
+        </figure> 
+        <div class="about__history">
+          <p >
+            Somos una joven empresa fundada en 2010, con un amplio legado de experiencias en el mundo del patinaje.<br> 
+            Satisfacemos los requerimientos de todos los patinadores, desde sus comienzos en este deporte hasta altas competencias.<br>
+            <b>
+            Te esperamos!</b>  
+          </p>
+       
+        </div>
+      </div>
+      <button type="button" class="w-100 btn  mt-3">
+        <a href="./public/views/about.html" class="link"  alt="Link que dirige hacia la página Acerca de Nosotros">Saber más</a>
+      </button>  
+    </section>
+    <!-- Fin About us --> 
+
+    <!-- Inicio Galería Productos -->
+    <main class="container mx-auto" id="product">
+      <div class="pricing-header  mx-auto text-center">
+        <hr class="">
+        <h3 class="display-4 " id="product">Productos</h3>
+        <hr class="">
+        <p class="fs-5 ">Somos distribuidores oficiales de las marcas más importantes del mercado.
+          <br/>Encontralas en nuestro shop.
+        </p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 mb-3  text-center productos">
+        <div class="col">
+          <div class="card mb-4 rounded-4 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Rollers</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+               <!-- Carousel Boostrap -->
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./public/img/gallery/3.jpg" class="d-block w-100" alt="imagen de patin tipo roller">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./public/img/gallery/7.jpg" class="d-block w-100" alt="imagen de patin tipo roller">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./public/img/gallery/8.png" class="d-block w-100" alt="imagen de patin tipo roller">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </ul>
+              <button type="button" class="w-100 btn btn-lg boton">
+                <a href="./public/views/shop.html" class="link"  alt="Link que dirige hacia la página Acerca de Nosotros">Ver más</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-4 shadow-sm">
+            <div class="card-header py-3 shadow-sm">
+              <h4 class="my-0 fw-normal">Artísticos</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./public/img//Artisticos/Bello.png" class="d-block w-100" alt="imagen de patin estilo artístico">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./public/img/Artisticos/cinco.png" class="d-block w-100" alt="imagen de patin estilo artístico">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./public/img/Artisticos/dos.png" class="d-block w-100" alt="imagen de patin estilo artístico">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg boton">
+                <a href="./public/views/shop.html" class="link"  alt="Link que dirige hacia la página Acerca de Nosotros">Ver más</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-4 shadow-sm ">
+            <div class="card-header py-3  shadow-sm">
+              <h4 class="my-0 fw-normal">Accesorios </h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./public/img/plancha/dos.png" class="d-block w-100" alt="Imagen plancha para patín artístico">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./public/img/repuestos/abec5.png" class="d-block w-100" alt="Imagen rulemanes para patín artístico">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./public/img/repuestos/ruedas3.png" class="d-block w-100" alt="Imagen ruedas para patín artístico">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button> 
+                </div>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg boton">
+                <a href="./public/views/shop.html" class="link"  alt="Link que dirige hacia la página Acerca de Nosotros">Ver más</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+   <!-- Fin Galeria Productos -->
+
+    <!-- Inicio Seccion Marcas -->
+    <section class="container mx-auto">
+      <hr class="">
+      <h3 class="marcas__title text-center mb-6">
+        Estas son algunas de las marcas que confían en nosotros.
+      </h3>
+      <hr class="">
+      <div class="marcas">
+        <div class="row">
+          <div class="marcas__img col">
+            
+            <div class="card mb-4 rounded-4 ">
+             <img
+               src="./public/img/Logos/seba.jpg"
+               alt="Logo de la marca Seba"
+               class="marcas__logo"
+             />
+            </div>
+   
+            <div class="card mb-4 rounded-4 ">
+             <img
+               src="./public/img/Logos/powerslide-1.png"
+               alt="Logo de la marca Powerslide"
+               class="marcas__logo"
+             />
+            </div>
+            <div class="card mb-4 rounded-4 ">
+             <img
+               src="./public/img/Logos/RISPORT (1).png"
+               alt="Logo de la marca Risport"
+               class="marcas__logo"
+             />
+            </div>
+            <div class="card mb-4 rounded-4 ">
+             <img
+               src="./public/img/Logos/edea-skates-logo.png"
+               alt="Logo de la marca Edea"
+               class="marcas__logo"
+             />
+            </div>
+            <div class="card mb-4 rounded-4 ">
+             <img
+               src="./public/img/Logos/fr.png"
+               alt="Logo de la marca Fr"
+               class="marcas__logo"
+             />  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+     <!--Fin Seccion Marcas -->
+    
+    <!-- Inicio Contacto -->
+    <section class="contacto container-fluid pt-md-5">
+      <hr class="">
+      <h3 class="text-center " id="contact">Contáctanos</h3>
+      <hr class="">
+      <form action="" >
+        <div class="mb-3 mt-3">
+          <label for="nombre" class="form-label">Nombre y Apellido:</label>
+          <input type="name" class="form-control" id="email" placeholder="Nombre y Apellido" required name="email">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="margarita@mail.com" required name="email">
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" required name="pswd">
+        </div>
+        <div class="mb-3">
+          <textarea name="message" id="" cols="" rows="10" placeholder="Deja aquí tu mensaje" ></textarea>
+        </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Recordar
+          </label>
+        </div>
+        <button type="submit" class="btn link">Enviar</button>
+      </form>
+    </section>
+    <!-- Fin contacto -->
+
+    <!-- Inicio Footer -->
+    <footer class=" p-5 pt-md-5 border-top container-fluid">
+      <div class="row container">
+        <div class="col-12 col-md pl-8">
+          <img class="mb-2" src="./public/img/hero/logo.png" alt="Logo de nuestra marca PatinArte" width="120" height="">
+          <p  class=" link-secondary">Lideres en venta de patines</p>
+          <div class="redes">
+            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe"><i class="fa-regular fa-envelope"></i></a>
+            
+          </div>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Info y Ayuda</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Sobre Nosotros</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Contactar</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacidad</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Precio de envío</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Área de clientes</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Inicio de Sesión</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Condiciones de venta</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Política de Pricacidad</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terminos</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contactos</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Dirección</a></li>
+            <p>Av. Emilia 15 47838 - Mar del Plata</p>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Teléfono</a></li>
+            <p>+54 9 11 490 841521</p>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Email</a></li>
+            <p>PatinArte46@gmail.com</p>
+          </ul>
+        </div>
+      </div>
+      <small class="d-block pb-md-4 copy text-center">&copy;Segura-Marisa 2023 - Potrero Digital - Profesor: Emiliano</small>
+    </footer>
+   <!-- Fin Footer -->
+    
+    <!-- Scripts Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+  </body>
+</html>

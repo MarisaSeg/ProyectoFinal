@@ -1,0 +1,368 @@
+/* Fonts */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap');
+
+  /*Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ddd;
+}
+img {
+    border-radius: 10px;
+}
+hr {
+    color: #FE6700;
+    background-color: #FE6700;
+    border: 2px solid #FE6700;
+    margin: 10x;
+    height: 5px;
+}
+a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #FEFEFE ; 
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+}
+.logo img {
+    width: 70%;
+}
+
+/* Navegación */
+header {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    border-bottom: 1px solid rgb(40, 39, 39);
+    box-shadow: 2px 3px 10px rgb(22, 22, 23);
+}
+.navbar__menu-icon{
+    display: none;
+    font-size: 30px;
+    line-height: 80px;
+    color: #FEFEFE;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+.navbar__items {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    transition: all .3s ease;
+}
+.navbar__item {
+    padding-left: 15px;
+    padding-right: 7px;
+    cursor: pointer;
+    border-right: #FE6700 2px solid;
+}
+
+.navbar__link:hover {
+    border: 2px solid #66d4e7;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+    color: darkorange;
+}
+
+/* Sección hero */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/hero/once.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border-bottom: 1px solid rgb(40, 39, 39);
+    box-shadow: 2px 3px 10px rgb(22, 22, 23);
+}
+.hero__hero {
+    width: 60vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, .5); 
+    padding: 2rem;
+    position: absolute;
+    bottom: 10px;
+    border: none;
+    border-radius: 40px;
+}
+.hero__contenedor {
+    width: 80vw;
+    height: 80vh;
+    padding: 13rem 2rem  4rem;  
+    color: #FFFFFF; 
+    font-size: 1.3em;
+    
+}
+.hero__title {
+    color: #66d4e7;
+}
+.hero__title  span {
+   color: #FE6700;
+   font-family: 'Cabin';
+   font-weight: 700;
+   font-size: 2em;
+}
+.hero__link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #FEFEFE;
+    background-color: transparent;
+    border: 3px solid  rgb(102, 212, 231);
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-left: 15px;
+}
+.hero__link:hover {
+    background-color: darkorange;
+}
+.link:hover {
+    background-color: #66d4e7;
+}
+
+/* About */
+.about {
+    color: #FE6700;
+    font-family: 'Cabin', sans-serif;
+    margin: 0 auto;
+    width: 90%;
+}
+.about__title {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.about__content {
+    display: flex;
+    width: 95%;
+    margin: auto;
+} 
+figure { 
+    margin: auto;
+
+} 
+.about__img {
+    width: 80%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    margin: auto;
+}
+
+.about__history {
+    max-width: 45%;
+    line-height: 1.9;
+    font-size: 1.4rem;
+    color: #3B0458;
+}
+.about__button {
+    margin: 1rem 50%;
+    width: 150px;
+    height: 50px;
+    background-color:  #FE6700;
+    color: #FEFEFE;
+    font-weight: 700;
+    outline: none; 
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.about__button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+    cursor: pointer;
+}
+
+/* Sección Productos */
+main {
+    margin: 40px;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.card {
+    background-color: #ddd;
+     flex-grow: 1;
+    flex-basis: 200; 
+}
+main .pricing-header  {
+    font-family: 'Cabin', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3B0458;
+}
+
+.card-header  {
+    background-color: #66d4e7; 
+    color: #3B0458;
+    font-weight: 700;
+}
+.link {
+    background-color: #FE6700;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    padding: 1rem 8rem;
+    border-radius: 7px;
+}
+ .link:hover {
+    background-color: #66d4e7;
+    color: #FE6700;
+} 
+
+
+/* Sección Marcas */
+.marcas__title {
+    color: #3B0458;
+}
+.marcas__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}  
+.marcas__img .card {
+    border: none;
+}
+.boton {
+    border: none;
+}
+/* Sección Formulario */
+.contacto {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/hero/tres.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+.contacto h3 {
+    
+    color: #FFFFFF;
+}
+form {
+    width: 80%;
+    height: auto;
+    margin:  auto;
+    padding: 30px;
+    border: #FE6700 2px solid;
+    border-radius: 5px;
+    font-family: 'cabins', sans-serif;
+    font-size: 1em;
+}
+.form-control {
+    border: none;
+    background: none;
+    border-bottom: 3px solid #FE6700;
+}
+.form-label, .form-check-label {
+    color: #FFFFFF;
+}
+textarea {
+    width: 100%;
+    background: none;
+    border: 3px solid #FE6700;
+}
+.form-check-input {
+    background: none;
+    border: 2px solid #FE6700;
+}
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, .2);
+}
+.redes i{
+    font-size: 20px;
+    margin: 10px;
+    color: #3B0458;
+}
+.copy {
+    color: #3B0458;
+}
+/* Responsive Design */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .logo img{
+        width: 55%;
+    }
+    .navbar {
+        font-size: .99rem;
+        justify-content: center;
+    }
+    
+    .hero__title {
+        font-size: 1em;
+    }
+    
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+    
+/* Teléfono */
+@media (max-width: 767px) {
+    
+    .navbar__items {
+        display: none;
+    }
+    .navbar__menu-icon{
+        display: block;
+    }
+    .navbar__menu-icon{
+        display: block;
+        
+    }
+    .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 120px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        background-color: rgba(0,0,0,.4);
+    }
+    .navbar ul li  {
+        border: none;
+        margin: 40px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .hero__hero {
+        background: none;  
+         color: #FFFFFF; 
+         font-size: 1em;
+         font-weight: 700;
+     }
+     .hero__title, .hero__contenido{
+         display: none;
+     }
+     
+}
+
+
